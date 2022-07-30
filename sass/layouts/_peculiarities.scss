@@ -1,0 +1,39 @@
+/*п'ятий паршал*/
+.peculiariti-titles {
+  margin-top: 94px;
+}
+
+.peculiariti-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.peculiariti-descr {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.details:not(:last-child) {
+  margin-right: 30px;
+}
+
+.plan {
+  width: 270px;
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  height: 120px;
+}

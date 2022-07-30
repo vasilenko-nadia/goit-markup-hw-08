@@ -1,0 +1,39 @@
+/*десятий паршал*/
+.benefits-section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.figure:hover .project-desc,
+.figure:focus .project-desc {
+  transform: translateY(0%);
+}
+
+.figure:hover,
+.figure:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.card {
+  padding: 20px 24px;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}

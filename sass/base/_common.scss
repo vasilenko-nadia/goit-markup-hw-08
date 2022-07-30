@@ -1,0 +1,12 @@
+/*другий паршал*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--primary_text-color);
+  color: var(--secondary-light-txt);
+
+  &.project-div {
+    position: relative;
+    overflow: hidden;
+  }
+}
