@@ -1,0 +1,21 @@
+.logo {
+    font-size: 24px;
+    line-height: 1.17;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+
+    &--darkmode {
+        color: var(--header-logo-color);
+    }
+
+    &--lightmode {
+        color: var(--primary-bg-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+}

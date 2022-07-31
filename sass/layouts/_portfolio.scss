@@ -1,39 +1,65 @@
-/*десятий паршал*/
-.benefits-section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.works__item {
+    --item: 1;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+        }
+        
+    @media screen and (min-width: 768px) {
+        --item: 2;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        --item: 3;
+    }
+
+    transition: box-shadow var(--anim);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
-.figure:hover .project-desc,
-.figure:focus .project-desc {
-  transform: translateY(0%);
+.works__link {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;         
+    }
 }
 
-.figure:hover,
-.figure:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+.works__desc {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+
+    @media screen and (min-width: 768px) {
+        &--grow{
+            flex-grow: 1;
+        }
+    }
 }
 
-.description {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: #757575;
+.works__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
 }
 
-.card {
-  padding: 20px 24px;
-  border-bottom: 1px solid #ececec;
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
+.works__text {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
 }
 
-.name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
+.works__position {
+    position: relative;
+    overflow: hidden;
 }
