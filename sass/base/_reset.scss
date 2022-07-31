@@ -63,3 +63,10 @@ img {
 .list__page {
   position: relative;
 }
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.7;
+  }
+}

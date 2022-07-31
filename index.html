@@ -24,6 +24,7 @@
 
   <body>
     <!-- хедер -->
+
     <header class="header">
       <div class="container header-container">
         <a class="logo-link" lang="en" href="./index.html">Web<span class="studio">Studio</span></a>
@@ -57,6 +58,7 @@
         </div>
       </div>
     </header>
+
     <!-- герой -->
     <main>
       <section class="service hero">
@@ -65,6 +67,7 @@
           <button class="button business" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
+
       <!-- особливості -->
       <section class="peculiariti-titles">
         <div class="container">
@@ -119,10 +122,11 @@
           </ul>
         </div>
       </section>
+
       <!-- Чим ми займаємося -->
       <section class="about">
         <div class="container">
-          <h2 class="about__us">Чем мы занимаемся</h2>
+          <h2 class="about__us title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="list__page">
               <img src="./images/img1.jpg" alt="верстка" width="370" />
@@ -139,14 +143,47 @@
           </ul>
         </div>
       </section>
+
       <!-- команда -->
       <section class="team team__section">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="team__title title">Наша команда</h2>
           <ul class="list">
             <li>
               <div class="team__cards">
-                <img src="./images/img4.jpg" alt="работник1" width="270" />
+                <picture class="card__img img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/page-1/team/team-desc-3.jpg    1x,
+                      ./images/page-1/team/team-desc-3@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/page-1/team/team-tab-3.jpg    1x,
+                      ./images/page-1/team/team-tab-3@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/page-1/team/team-mob-3.jpg    1x,
+                      ./images/page-1/team/team-mob-3@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img"
+                    src="./images/page-1/team/team-mob-3.jpg"
+                    alt="Ольга Репина"
+                    width="450"
+                    height="460"
+                  />
+                </picture>
                 <div class="team__processing">
                   <h3 class="team__name">Игорь Демьяненко</h3>
                   <p class="team__job" lang="en">Product Designer</p>
@@ -303,10 +340,11 @@
           </ul>
         </div>
       </section>
+
       <!-- Постійні клієнти -->
       <section class="clients section">
         <div class="container">
-          <h2 class="client">Постоянные клиенты</h2>
+          <h2 class="client title">Постоянные клиенты</h2>
           <ul class="client__list">
             <li class="client__item">
               <a href="" class="client__link">
@@ -359,7 +397,9 @@
         </div>
       </section>
     </main>
+
     <!-- футер -->
+
     <footer class="footer">
       <div class="footer-center">
         <div class="footer-logo">
@@ -508,6 +548,51 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu-nav list">
+        <li class="mobile-menu-nav__item">
+          <a class="mobile-menu-nav__link mobile-menu-nav__link--current link" href="./index.html"
+            >Студия</a
+          >
+        </li>
+        <li class="mobile-menu-nav__item">
+          <a class="mobile-menu-nav__link link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu-nav__item">
+          <a class="mobile-menu-nav__link link" href="">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contacts list">
+        <li class="mobile-menu-contacts__item">
+          <a class="mobile-menu-contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu-contacts__item">
+          <a class="mobile-menu-contacts__mail link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-socials list">
+        <li class="mobile-menu-socials__item">
+          <a class="mobile-menu-socials__link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu-socials__item">
+          <a class="mobile-menu-socials__link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu-socials__item">
+          <a class="mobile-menu-socials__link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-menu-socials__item">
+          <a class="mobile-menu-socials__link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
