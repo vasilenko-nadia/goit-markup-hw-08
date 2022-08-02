@@ -1638,6 +1638,11 @@ textarea {
 .footer__info {
   text-align: center;
 }
+@media screen and (min-width: 480px) {
+  .footer__info {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__info {
     margin-right: 165px;
@@ -1712,6 +1717,11 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .footer__links {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__links {
